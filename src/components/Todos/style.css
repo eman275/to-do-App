@@ -1,9 +1,0 @@
-.Container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .counter{
-margin: 100px;
-  }

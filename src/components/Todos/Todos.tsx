@@ -21,17 +21,9 @@ const Todos = () => {
     <>
       <DragDropContext
         onBeforeDragStart={() => setDragging(true)}
-        onDragEnd={onDragEnd}
-      >
-        {/* <Box component="span" sx={{ p: 2,m:20,border: '1px dashed grey',color:'primary' }} >
-          number of tasks = {todos.length}
-        </Box> */}
+        onDragEnd={onDragEnd}>
         <Button
-          variant="contained"
-          color="primary"
-          style={{ marginTop: 5 }}
-          type="submit"
-          className="counter"
+          style={{ marginLeft:150,marginTop:20}}
         >
           number of tasks = {todos.length}
         </Button>
