@@ -1,24 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useContext, useState } from "react";
+import AddTodo from "./components/Todos/AddTodo";
+import Todos from "./components/Todos/Todos";
+import { MainContext } from "./context/MainContext";
 
 function App() {
+  const { addTodo } = useContext(MainContext)!;
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ height: "100vh" }}>
+        <AddTodo addTodo={addTodo} />
+        <Todos />
+       
     </div>
   );
 }
