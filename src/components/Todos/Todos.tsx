@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { MainContext } from "../../context/MainContext";
 import { Droppable, DragDropContext, DropResult } from "react-beautiful-dnd";
 import Todo from "./Todo";
-import { Box, Button, Snackbar } from "@material-ui/core";
+import { Box, Button, Container, Snackbar } from "@material-ui/core";
 import { Alert } from "@material-ui/lab";
 import FlipMove from "react-flip-move";
 
@@ -19,14 +19,19 @@ const Todos = () => {
 
   return (
     <>
+     <Container maxWidth="sm" className="Container">
+          <Button
+            variant="contained"
+            color="primary"
+            style={{ marginTop: 10 }}
+            type="submit"
+          >
+            number of tasks = {todos.length}
+          </Button>
+        </Container>
       <DragDropContext
         onBeforeDragStart={() => setDragging(true)}
-        onDragEnd={onDragEnd}>
-        <Button
-          style={{ marginLeft:150,marginTop:20}}
-        >
-          number of tasks = {todos.length}
-        </Button>
+        onDragEnd={onDragEnd} >
         <Droppable droppableId="0">
           {(p) => (
             <div {...p.droppableProps} ref={p.innerRef}>
