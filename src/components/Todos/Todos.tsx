@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { MainContext } from "../../context/MainContext";
 import { Droppable, DragDropContext, DropResult } from "react-beautiful-dnd";
 import Todo from "./Todo";
-import { Snackbar } from "@material-ui/core";
+import { Box, Snackbar } from "@material-ui/core";
 import { Alert } from "@material-ui/lab";
 import FlipMove from "react-flip-move";
 
@@ -16,12 +16,16 @@ const Todos = () => {
     moveTodo(x.source.index, x.destination.index);
     setTimeout(() => setDragging(false), 200);
   };
+
   return (
     <>
       <DragDropContext
         onBeforeDragStart={() => setDragging(true)}
         onDragEnd={onDragEnd}
       >
+        <Box component="span" sx={{ p: 2,m:20,border: '1px dashed grey',color:'primary' }} >
+          number of tasks = {todos.length}
+        </Box>
         <Droppable droppableId="0">
           {(p) => (
             <div {...p.droppableProps} ref={p.innerRef}>
@@ -38,6 +42,7 @@ const Todos = () => {
                   );
                 })}
               </FlipMove>
+        
               {p.placeholder}
             </div>
           )}
