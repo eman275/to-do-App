@@ -27,7 +27,7 @@ const EditConfirm = ({ open, close, value, yes }: Props) => {
       <DialogTitle id="form-dialog-title">EDIT ITEM</DialogTitle>
       <DialogContent>
         <DialogContentText>
-          Please provide the new name for this item.
+          Please provide the new name for this task.
         </DialogContentText>
         <TextField
           autoFocus
