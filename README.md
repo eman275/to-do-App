@@ -1,5 +1,5 @@
 <h1 align="center">
-   Todos App 📝
+   To-Do task App 📝
 </h1>
 
 <p align="center">
