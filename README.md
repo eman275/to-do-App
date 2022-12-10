@@ -26,8 +26,9 @@ It uses [TypeScript](https://www.typescriptlang.org/), [Context API](https://rea
 ## 🏗️ To build it
 
 1. Clone this repo by running `git clone https://github.com/eman275/to-do-App`.
-2. `cd` into the `todo-app` folder and run `npm i` or `yarn`.
-3. Run `npm start` OR `yarn start` to start the development server.
+2. git help docs could help you `https://git-scm.com/docs/git-help` ,
+3. `cd` into the `todo-app` folder and run `npm i` or `yarn`.
+4. Run `npm start` OR `yarn start` to start the development server.
 # Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
