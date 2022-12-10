@@ -1,5 +1,5 @@
 import { TodoType } from "../../types";
-import React, { useState, useContext, forwardRef } from "react";
+import  { useState, useContext, forwardRef } from "react";
 import { DeleteConfirm } from "../Actions/DeleteConfirm";
 import EditConfirm from "../Actions/EditConfirm";
 import {
@@ -13,8 +13,8 @@ import {
 } from "@material-ui/core";
 import {  Draggable } from "react-beautiful-dnd";
 import ActionsMenu from "../Actions/ActionsMenu";
-import { SmallTextContext } from "../../context/SmallTextContext";
-import { MainContext } from "../../context/MainContext";
+import { SmallTextContext } from "../../providers/SmallTextContext";
+import { MainContext } from "../../providers/MainProvider";
 
 interface Props {
   todo: TodoType;
@@ -117,7 +117,7 @@ const Todo = forwardRef(
           )}
         </Draggable>
         <DeleteConfirm
-          yes={() => {
+          onClickDeleteBtn={() => {
             setDeleteOpen(false);
             setTimeout(() => {
               delTodo(todo.id);
@@ -125,10 +125,10 @@ const Todo = forwardRef(
             }, 200);
           }}
           open={deleteOpen}
-          close={() => setDeleteOpen(false)}
+          onClickCancel={() => setDeleteOpen(false)}
         />
         <EditConfirm
-          yes={(val: string) => {
+          onClickEdit={(val: string) => {
             setEditOpen(false);
             setTimeout(() => {
               editTodo(todo.id, val);

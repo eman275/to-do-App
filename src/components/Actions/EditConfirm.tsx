@@ -10,13 +10,13 @@ import {
 } from "@material-ui/core";
 
 interface Props {
-  yes: (val: string) => void;
+  onClickEdit: (val: string) => void;
   open: boolean;
   close: () => void;
   value: string;
 }
 
-const EditConfirm = ({ open, close, value, yes }: Props) => {
+const EditConfirm = ({ open, close, value, onClickEdit }: Props) => {
   const [newValue, setNewValue] = useState(value);
   const onClose = () => {
     setNewValue(value);
@@ -45,7 +45,7 @@ const EditConfirm = ({ open, close, value, yes }: Props) => {
           Cancel
         </Button>
         <Button
-          onClick={() => newValue.trim() && yes(newValue)}
+          onClick={() => newValue.trim() && onClickEdit(newValue)}
           color="primary"
           variant="contained"
         >

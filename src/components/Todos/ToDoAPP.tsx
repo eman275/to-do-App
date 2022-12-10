@@ -1,12 +1,12 @@
 import { useContext, useState } from "react";
-import { MainContext } from "../../context/MainContext";
+import { MainContext } from "../../providers/MainProvider";
 import { Droppable, DragDropContext, DropResult } from "react-beautiful-dnd";
 import Todo from "./Todo";
 import { Box, Button, Container, Snackbar } from "@material-ui/core";
 import { Alert } from "@material-ui/lab";
 import FlipMove from "react-flip-move";
 
-const Todos = () => {
+const ToDoAPP = () => {
   const { todos, moveTodo } = useContext(MainContext)!;
   const [deleteSnackOpen, setDeleteSnackOpen] = useState(false);
   const [editSnackOpen, setEditSnackOpen] = useState(false);
@@ -28,7 +28,7 @@ const Todos = () => {
             style={{ marginTop: 10 }}
             type="submit"
           >
-            number of  completed tasks = {counter}
+            number of  completed tasks = {counter} / {todos.length}
           </Button>
         </Container>
       <DragDropContext
@@ -91,4 +91,4 @@ const Todos = () => {
   );
 };
 
-export default Todos;
+export default ToDoAPP;

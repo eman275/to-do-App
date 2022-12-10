@@ -10,28 +10,28 @@ import {
 
 interface Props {
   open: boolean;
-  close: () => void;
-  yes: () => void;
+  onClickCancel: () => void;
+  onClickDeleteBtn: () => void;
 }
 
-export const DeleteConfirm = ({ open, close, yes }: Props) => {
+export const DeleteConfirm = ({ open, onClickCancel, onClickDeleteBtn }: Props) => {
   const matches = useMediaQuery("(max-width: 768px)");
   return (
-    <Dialog open={open} onClose={close}>
+    <Dialog open={open} onClose={onClickCancel}>
       <DialogTitle>DELETE ITEM?</DialogTitle>
         <div style={{ display: matches ? "none" : "block" }}>
       <DialogContent>
         <DialogContentText>
-          Are you sure you want to delete this item?
+          Are you sure you want to delete this task?
         </DialogContentText>
       </DialogContent>
         </div>
       <DialogActions>
-        <Button onClick={close} color="primary">
-          No
+        <Button onClick={onClickCancel} color="primary">
+          cancel
         </Button>
-        <Button onClick={yes} color="primary" variant="contained">
-          Yes
+        <Button onClick={onClickDeleteBtn} color="primary" variant="contained">
+          delete
         </Button>
       </DialogActions>
     </Dialog>

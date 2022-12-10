@@ -11,7 +11,7 @@ import { Alert } from "@material-ui/lab";
 import { Add } from "@material-ui/icons";
 
 
-const AddTodo: FC<{ addTodo: (text: string) => void }> = ({ addTodo }) => {
+const AddTask: FC<{ addTodo: (text: string) => void }> = ({ addTodo }) => {
   const [text, setText] = useState("");
   const [open, setOpen] = useState(false);
   const handleChange = (
@@ -67,4 +67,4 @@ const AddTodo: FC<{ addTodo: (text: string) => void }> = ({ addTodo }) => {
   );
 };
 
-export default AddTodo;
+export default AddTask;

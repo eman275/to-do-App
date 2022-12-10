@@ -6,7 +6,6 @@ interface MainContextInterface {
   setTodos: React.Dispatch<React.SetStateAction<TodoType[]>>;
   markComplete: (id: string) => void;
   delTodo: (id: string) => void;
-  deleteAll: () => void;
   editTodo: (id: string, text: string) => void;
   addTodo: (title: string) => void;
   moveTodo: (old: number, new_: number) => void;
@@ -92,7 +91,6 @@ export const MainProvider = ({ children }: Props) => {
     setTodos,
     markComplete,
     delTodo,
-    deleteAll,
     editTodo,
     addTodo,
     moveTodo,
