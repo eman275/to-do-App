@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import { MainContext } from "../../providers/MainProvider";
 import { Droppable, DragDropContext, DropResult } from "react-beautiful-dnd";
 import Todo from "./Todo";
-import { Box, Button, Container, Snackbar } from "@material-ui/core";
+import { Box, Button, Container, Snackbar, Typography } from "@material-ui/core";
 import { Alert } from "@material-ui/lab";
 import FlipMove from "react-flip-move";
 
@@ -21,16 +21,12 @@ const ToDoAPP = () => {
 
   return (
     <>
-     <Container maxWidth="sm" className="Container">
-          <Button
-            variant="contained"
-            color="primary"
-            style={{ marginTop: 10 }}
-            type="submit"
-          >
-            number of  completed tasks = {counter} / {todos.length}
-          </Button>
+     <Container maxWidth="sm"  style={{ marginTop: 10 }}>
+            <Typography>
+              number of  completed tasks = {counter} / {todos.length}
+              </Typography> 
         </Container>
+    
       <DragDropContext
         onBeforeDragStart={() => setDragging(true)}
         onDragEnd={onDragEnd} >

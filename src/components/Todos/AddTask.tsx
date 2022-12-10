@@ -30,7 +30,7 @@ const AddTask: FC<{ addTodo: (text: string) => void }> = ({ addTodo }) => {
         <form onSubmit={createTodo} className="add-todo">
           <FormControl fullWidth={true}>
             <TextField
-              label="add a task"
+              label="Add a task"
               variant="standard"
               onChange={handleChange}
               required={true}
@@ -43,7 +43,7 @@ const AddTask: FC<{ addTodo: (text: string) => void }> = ({ addTodo }) => {
               type="submit"
             >
               <Add />
-              Add your task
+              Add
             </Button>
           </FormControl>
         </form>

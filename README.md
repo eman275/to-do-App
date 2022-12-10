@@ -1,3 +1,42 @@
+<h1 align="center">
+   Todos App 📝
+</h1>
+
+<p align="center">
+  🖊️ Todo App built using <a href="https://reactjs.org/">React with TypeScript</a> and <a href="https://material-ui.com/">Material UI</a>
+</p>
+<p align="center">
+<a href="https://gitmoji.carloscuesta.me">
+  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
+</a>
+  
+<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
+<!-- ALL-CONTRIBUTORS-BADGE:END -->
+</p>
+
+## This is a  simple Todo App built using React.js with typeScript and styled using Material UI.
+
+It uses [TypeScript](https://www.typescriptlang.org/), [Context API](https://reactjs.org/docs/context.html) to manage state, [Material UI](https://material-ui.com/) for design, [Wouter](https://github.com/molefrog/wouter) for routing, [`localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to store todos and Dark Mode support with [Dark Reader](https://darkreader.org/).
+
+### You can view it here: https://maxtodos.netlify.app/
+
+## 😃 You can:
+
+- ➕ Add task.
+- 🖊️ Edit task.
+- 🗑️ Delete task.
+- start and un star task.
+- know number of completed tasks .
+- ↕️ Reorder the todos by dragging them
+
+
+
+## 🏗️ To build it
+
+1. Clone this repo by running `git clone https://github.com/eman275/to-do-App`.
+2. `cd` into the `todo-app` folder and run `npm i` OR `yarn`.
+3. Run `npm start` OR `yarn start` to start the development server.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
