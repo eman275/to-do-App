@@ -21,11 +21,16 @@ const ToDoAPP = () => {
 
   return (
     <>
-     <Container maxWidth="sm"  style={{ marginTop: 10 }}>
-            <Typography>
-              number of  completed tasks = {counter} / {todos.length}
-              </Typography> 
-        </Container>
+    {counter !==0 ? 
+      <Container maxWidth="sm"  style={{ marginTop: 10 }}>
+      <Typography>
+        number of  completed tasks = {counter} / {todos.length}
+        </Typography> 
+  </Container>
+  :
+  null
+    }
+   
     
       <DragDropContext
         onBeforeDragStart={() => setDragging(true)}
