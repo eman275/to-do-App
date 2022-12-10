@@ -17,6 +17,8 @@ const Todos = () => {
     setTimeout(() => setDragging(false), 200);
   };
 
+  const counter = todos.filter(item => item.completed === true).length;
+
   return (
     <>
      <Container maxWidth="sm" className="Container">
@@ -26,7 +28,7 @@ const Todos = () => {
             style={{ marginTop: 10 }}
             type="submit"
           >
-            number of tasks = {todos.length}
+            number of  completed tasks = {counter}
           </Button>
         </Container>
       <DragDropContext
