@@ -5,9 +5,8 @@
 <p align="center">
   🖊️ Todo App built using <a href="https://reactjs.org/">React with TypeScript</a> and <a href="https://material-ui.com/">Material UI</a>
 </p>
-<p align="center">
-<a href="https://gitmoji.carloscuesta.me">
-</a>
+<p align="center"></p>
+
   
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
