@@ -7,7 +7,6 @@
 </p>
 <p align="center">
 <a href="https://gitmoji.carloscuesta.me">
-  <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67.svg?style=flat-square" alt="Gitmoji">
 </a>
   
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -21,7 +20,7 @@ It uses [TypeScript](https://www.typescriptlang.org/), [Context API](https://rea
 
 ### You can view it here: https://maxtodos.netlify.app/
 
-## 😃 You can:
+##  You can:
 
 - ➕ Add task.
 - 🖊️ Edit task.
@@ -38,7 +37,6 @@ It uses [TypeScript](https://www.typescriptlang.org/), [Context API](https://rea
 2. `cd` into the `todo-app` folder and run `npm i` OR `yarn`.
 3. Run `npm start` OR `yarn start` to start the development server.
 # Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
