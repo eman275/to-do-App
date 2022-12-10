@@ -21,14 +21,12 @@ const ToDoAPP = () => {
 
   return (
     <>
-    {counter !==0 ? 
+    {counter !==0 &&
       <Container maxWidth="sm"  style={{ marginTop: 10 }}>
       <Typography>
         number of  completed tasks = {counter} / {todos.length}
         </Typography> 
   </Container>
-  :
-  null
     }
    
     
