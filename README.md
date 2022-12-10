@@ -7,11 +7,6 @@
 </p>
 <p align="center"></p>
 
-  
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-8-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-</p>
 
 ## This is a  simple Todo App built using React.js with typeScript and styled using Material UI.
 
